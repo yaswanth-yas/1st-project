@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Book a Ride</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+<style>
+body{
+background: url("testride1.jpg") no-repeat center fixed;
+ background-size: 100%;
+}
+</style>
+</head>
+<body class="container-fluid">
+<div style="margin:20px 0 0 20px;">
+   <a href="http://localhost:8080/BikeShowRoom/home/home.html"> <i class="fa-solid fa-circle-left" style="font-size: 26px;color: yellow;display:inline-block"></i> </a>  
+    </div>
+    <div >
+    <center style="margin-top: 3%">
+        <h4 style="color: red;">Book a Test Ride Today.</h4>
+            <hr style="width: 30%;height: 3px;"></hr>
+    </center>
+    </div>
+   <form method="post" action="ride.jsp">
+    <div class="row" style="margin: 0 5% 0 0"> 
+        <div class="col-9 mt-3" style="border:4px solid whitesmoke;margin:2% 2% 10% 25%;box-shadow:3px 5px 10px 2px grey;width: 55%;">
+     
+         <div style="margin:15px;">
+           <input type="text" id=name name=name placeholder="Full name*" class="form-control" style="display: inline-block;width:250px ;" required/>
+           <input type="email" id=email name=email placeholder="Email address*" class="form-control" style="display: inline-block; width: 250px;margin: 0 0 0 6%;"/>
+           </div>
+           <div  style="margin: 15px;">
+            <select name=model class="form-select"   style="display: inline-block;width:250px ;color:grey;padding:5px;border-radius:2px">
+            <option class="form-control">Select bike models*</option>
+            <option>HIMALAYAN 450</option>
+           <option class="">  HUNTER    350</option>
+           <option class=""> METEOR    350</option>
+           <option class=""> CLASSIC   350</option>
+           <option class=""> BULLET    350</option>
+            </select>
+            <input type="text" id=phone name=phone placeholder="Enter phone number*" class="form-control" style="display: inline-block; width: 250px;margin: 0 0 0 6%;"/>
+            </div>
+            <div  style="margin: 15px;">
+                <textarea type="text" id=address name=address placeholder="Address*" class="form-control" style="width: 550px;height: 100px;" ></textarea>
+                <p style="margin-top: 2%;color:white;text-shadow:4px 3px 4px black "> 
+                    Disclaimer: By signing this form/checking this box, you acknowledge and agree that we may use the information you share with us, to communicate with you through e-mails, text messages, WhatsApp and calls, in order to provide our product or service related information and/or for promotional and marketing purposes. All information provided will be secured and processed as per our privacy policy.  </p>
+                   <input type="checkbox" style="display: inline-block;"/><p style="display: inline-block;margin-left: 2%;color:white;text-shadow:4px 3px 4px black "> I accept the terms and conditions as well as privacy policy.</p>
+                </div>
+           <div align="left" class="mt-2" style="margin: 15px;">
+           <input type="submit"   class="btn btn-warning btn-outline-warning" style="margin: 2px;color: white;"/>
+           <input type="reset"  class="btn btn-danger btn-outline-danger" style="color: white;"/>
+           </div>
+      </form>
+        </div>
+        </div>
+</body>
+</html>

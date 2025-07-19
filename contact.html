@@ -1,0 +1,150 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type"content="text/html; charset=utf-8"/>
+		<meta name="viewport"content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Contact Form With Google Map</title>
+		<link href="contactstyle.css"rel="stylesheet"type="text/css"/>
+		    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+	</head>
+	<style>
+	
+	#nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color:black;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position:sticky;
+    top: 0;
+    left: 0;
+}
+ul{
+    float: right;
+    display: flex;
+}
+#n1{
+    margin-left:150% ;
+}
+#navbar li{
+    list-style: none;  
+    padding: 0 20px;
+    position: relative
+}
+#navbar{
+    padding-right: 50%;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active {
+  color:red;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color:red;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+	
+	</style>
+	<body>
+	
+	<div class="ho1">
+     <div id="nav">
+      <img src="logo1 (1).png" alt="">
+          <ul id="navbar">
+              <li id="n1" style="margin:0 0 0 910px"><a class="#" href="http://localhost:8080/BikeShowRoom/home/home.html"><b>HOME</b></a></li>      
+               <li class="nav-item dropdown" style="padding:0 0 0 22px">
+          <a class="nav-link dropdown-toggle navbar-brand" href="http://localhost:8080/BikeShowRoom/home/BikesList/bike.html"
+           id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+           style="padding:0 0 0px 0">
+          <b style="padding:0 0 30px 0">MODELS</b>
+        
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="http://localhost:8080/BikeShowRoom/home/BikesList/bike.html#" style="color:black">ALL MODELS</a></li>
+            <li><a class="dropdown-item " href="http://localhost:8080/BikeShowRoom/home/BikesList/guerilla.html" style="color:red"> GUERILLA 450</a></li>
+            <li><a class="dropdown-item" href="http://localhost:8080/BikeShowRoom/home/BikesList/himalayan.html" style="color:red">HIMALAYAN 450</a></li>
+            <li><a class="dropdown-item" href="http://localhost:8080/BikeShowRoom/home/BikesList/hunter.html"    style="color:red">HUNTER    350</a></li>
+            <li><a class="dropdown-item" href="http://localhost:8080/BikeShowRoom/home/BikesList/meteor.html"    style="color:red">METEOR    350</a></li>
+            <li><a class="dropdown-item" href="http://localhost:8080/BikeShowRoom/home/BikesList/classic.html"    style="color:red">CLASSIC   350</a></li>
+            <li><a class="dropdown-item" href="http://localhost:8080/BikeShowRoom/home/BikesList/bullet.html"    style="color:red">BULLET    350</a></li>
+    
+          </ul>
+        </li>      
+             
+             <li><a class="active" href="#"><b>CONTACT</b></a></li>
+             <li><a class="#" href="http://localhost:8080/BikeShowRoom/home/customers/adminlogin.html"><b>ADMIN</b></a></li>
+      
+                
+                
+          </ul>
+     </div>
+    </div>
+	
+		<div class="contact-wrap">
+			<div class="contact-in">
+				<h1>Contact Info</h1>
+				<h2><i class="fa fa-phone" aria-hidden="true"></i> Phone</h2>
+				<p>+91 9014157858</p>
+				<h2><i class="fa fa-envelope" aria-hidden="true"></i> Email</h2>
+				<p>vasanthgarikina23@gmail.com</p>
+				<h2><i class="fa fa-map-marker" aria-hidden="true"></i> Address</h2>
+				<p>RTC Complex,Vizag,Ap,India-016</p>
+				<ul>
+					<li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="https://x.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="https://google.com/"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+					<li><a href="https://instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					
+				</ul>
+			</div>
+			 
+			<div class="contact-in">
+				<h1>Send a Message</h1>
+				<form>
+					<input type="text" placeholder="Full Name" class="contact-in-input" required>
+					<input type="text" placeholder="Email" class="contact-in-input" required>
+					<input type="text" placeholder="Subject" class="contact-in-input" required>
+					<textarea placeholder="Message" class="contact-in-textarea"></textarea>
+					<input type="submit" value="SUBMIT" class="contact-in-btn">
+				</form>
+			</div>
+			<div class="contact-in">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.386881626042!2d83.30400057494292!3d17.7264008832198!2m3!
+		1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a394363bb2f123f%3A0x79d41aea159828e6!2sVisual%20Arts!5e0!3m2!1sen!2sin!4v1728536384359!5m2!1sen!2sin" 
+		width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>>
+			</div>
+			<!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="mailto:vasanthgarikina@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.instagram.com/royalenfield"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/9014157858"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.youtube.com/channel/royalenfield"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/vasanth-kumar-15a1a028a"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="footer-info">
+                <p>© 2024 Royal Enfield. All rights reserved.</p>
+                <p>RTC Complex, Vizag, India</p>
+            </div>
+        </div>
+    </footer>
+		</div>
+
+	</body>
+</html>
